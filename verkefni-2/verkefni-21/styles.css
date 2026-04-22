@@ -1,0 +1,61 @@
+h1{
+    border: 2px solid green;
+}
+/*div*/
+.red-border{
+    border: 4px solid red;
+    margin: 2rem;
+    padding: 2rem;
+    color: red;
+}
+/* div h1 */
+.blue-border { 
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px dotted blue;
+    color: blue;
+}
+/* V. 2.2 ul li */
+li{
+    border: 2px dashed green;
+    padding: 1rem;
+}
+
+.inline li {
+   display: inline ;
+   border: 2px dashed blue;
+   color: red;
+}
+.inline-block li{
+    display: inline-block;
+     border: 2px dashed red;
+     margin: 1rem;
+     padding: 1rem;
+}
+/*V 2.3 float*/
+/* stjarnan (*) þýðir allt*/
+* {
+box-sizing: border-box;
+}
+.flot section {
+    border: 1px solid;
+    padding: 2rem;
+    width: 50%;
+    float: left;
+}
+.bigL {
+    font-size: 4rem;
+    float: left;
+    line-height: 0.8;
+    padding-right: 2px;
+}
+
+section p::first-line {
+    text-transform: uppercase;
+} 
+.floatR img{
+    float: right;
+    width: 150px;
+    padding: left 1rem;
+
+}

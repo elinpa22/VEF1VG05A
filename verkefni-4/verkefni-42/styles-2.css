@@ -1,0 +1,76 @@
+body {
+	display: grid;
+	grid-template-areas: /* þetta er sniðugt til þess að skipuleggja síðuna*/
+		"header"
+		"topmenu"
+		"main"
+		"footer";
+	margin: 0 1rem;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	line-height: 1.4;
+}
+.topmenu {
+	grid-area: topmenu;
+}
+.header {
+	grid-area: header;
+	text-align: center;
+}
+.article {
+	grid-area: article;
+}
+.as1 {
+	grid-area: as1;
+}
+.as2 {
+	grid-area: as2;
+}
+.footer {
+	grid-area: footer;
+}
+section {
+	border: 1px solid;
+	padding: 1rem; 
+}
+section p{
+	text-align: justify; /* justify er að jafna textann*/
+}
+footer p {
+  text-align: center;
+}
+main {
+	display: grid;
+	grid-area: main;
+	border-bottom: 1px solid;
+	grid-template-areas:
+		"article"
+		"as1"
+		"as2";
+	padding-bottom: 1rem;
+	border-bottom: 1px solid;
+}
+@media screen and (min-width: 768px) {
+	.main {
+		grid-template-areas:
+			"article article"
+			"as1 as2";
+		column-gap: 2rem;
+	}	
+}
+@media screen and (min-width: 960px) {
+	body {
+	grid-template-areas:
+		"header"
+		"topmenu"
+		"main"
+		"footer";
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.main {
+		grid-template-areas:
+		"article article as1" /* með því að skrifa þettas vona þá tekur article 60% pláss af skjánum en hliðardálkarnir 40%*/
+		"article article as2";
+		column-gap: 2rem;
+	}
+}

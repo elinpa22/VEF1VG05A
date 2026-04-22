@@ -1,0 +1,62 @@
+body {
+	 margin: 0 8px;
+	 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	 line-height:  1.4
+	 ;
+	 
+}
+header {
+	text-align: center;
+}
+section {
+	border: 1px solid;
+	padding: 1rem; 
+}
+section p{
+	text-align: justify; /* justify er að jafna textann*/
+}
+footer p {
+  text-align: center;
+}
+.col-2, .col-3, .col-4, .col-131, .col-311 {
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 1rem;
+}
+
+/* svegjanleg hönnun, spjaldtölvur*/
+@media screen and (min-width:768px) {
+	.col-2, .col-4 {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1rem;
+	}
+	.col-3 {
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 1rem;
+	}
+	.col-32 {
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+	}
+
+}
+
+/* passa upp á að @media sé utanum stíla í 960px!!*/
+@media screen and (min-width:960px) {
+		/* dálkaskipulag*/
+		body {
+			margin: 0 auto;
+			max-width: 960px;
+		}
+		.col-4 {
+			grid-template-columns: repeat(4, 1fr); /* repeat er algjör snild, sparar handavinnu --- ath, það eru aldrei fleiri en fjórir dálkar*/
+			column-gap: 1rem;
+		}
+		.col-311 {
+			grid-template-columns: 3fr 2fr; /* ath 2 dálkar */
+			column-gap: 2rem;
+		}
+			.col-32 {
+			grid-template-columns: 1fr; /* ath 1 dálkar */
+		}
+}

@@ -1,0 +1,66 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.4 /* standard stærð*/;
+}
+h1 {
+    color: rgb(183, 17, 183);
+    text-align: center;
+}
+.fjólublár-border {
+    border: 5px solid rgb(183, 17, 183);
+    margin: 1rem;
+    padding: 1rem;
+    background-color: lightpink;
+}
+nav {
+    background-color: lightpink;
+    text-align: center;
+}
+/* tenglarnir í nav */
+nav a:link {
+    display: inline-block;
+    padding: 0.5rem 2rem; /* top+botto, og left+right */
+    margin: 0;
+    text-decoration: none;
+    color: rgb(138, 0, 138);
+}
+nav a:visited {
+    color: brown;
+}
+nav a:hover,
+nav a:active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(216, 111, 146);
+}
+aside a:link {
+    color: rgb(138, 0, 138);
+}
+aside a:visited {
+     color: brown
+}
+aside a:hover {
+    text-decoration: none;
+}
+
+footer {
+      background-color: rgb(255, 182, 193);
+      border-top: 1px solid  rgb(138, 0, 138);
+      padding: 1rem;
+}
+footer p {
+    text-align: center;
+}
+.bigL {
+    font-size: 10rem;
+    float: left;
+    line-height: 0.8;
+    padding-right: 20px;
+    color: rgb(138, 0, 138);
+}
+article img{
+    float: right;
+    width: 180px;
+    padding-left: 2rem;
+}

@@ -1,0 +1,46 @@
+ * {
+    box-sizing: border-box;
+}
+body {
+	max-width: 60em;
+	 margin: 0 auto;
+	 font-family: sans-serif;
+	/* font-size: 1.2em; hefur áhriff á max-width = 60x1.2em */
+}
+footer p {
+  text-align: center;
+}
+.gulur {
+	background-color: yellow; 
+}
+.raudur {
+	background-color: red; 
+}
+.graenn {
+	background-color: lime;
+}
+.blar {
+	background-color: cyan; 
+}
+.row p, .col p {
+	display: flex;
+	justify-content: center; /*til þess að miðjusetja starfina í boxunum*/
+	align-items: center;
+
+	font-size: 1.2em;
+	height: 5em;
+}
+.row {
+	display: flex; /* fór í eina klessu, þurfum þess vegna að bæta við skipunum sem eru hér fyrir neðan*/
+	flex-flow: row-reverse; /*guli fær meira pláss*/
+}
+.row div {
+	flex-grow: 1; /*sér um að dálkarnir dreifast */
+}
+.row div:first-child{
+	flex-grow: 1; /* ef þú breytir tölunni hér þá stækka boxin*/
+}
+.col {
+	display: flex; 
+	flex-flow: column-reverse
+}
